@@ -20,6 +20,6 @@ class CustomCell: UITableViewCell {
     func configure(name: List, image: List) {
         fruitsLabel.text = name.fruit
         // 三項演算子で記述
-        checkMarkImageView.image = image.isMarked == true ? UIImage(named: "chekmark") : UIImage(named: "white")
+        checkMarkImageView.image = image.isMarked == true ? UIImage(named: "checkmark") : UIImage(named: "white")
     }
 }
