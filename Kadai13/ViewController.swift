@@ -10,11 +10,11 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
 
-    private let fruitsArray: [CustomCell.List] = [
-        .init(fruit: "りんご", isMarked: false),
-        .init(fruit: "みかん", isMarked: true),
-        .init(fruit: "バナナ", isMarked: false),
-        .init(fruit: "パイナップル", isMarked: true)
+    private let fruitsArray: [ListItem] = [
+        .init(name: "りんご", isMarked: false),
+        .init(name: "みかん", isMarked: true),
+        .init(name: "バナナ", isMarked: false),
+        .init(name: "パイナップル", isMarked: true)
     ]
 
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // swiftlint:disable:next force_cast
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell
-        cell.configure(name: fruitsArray[indexPath.row], image: fruitsArray[indexPath.row])
+        cell.configure(item: fruitsArray[indexPath.row])
         return cell
     }
 

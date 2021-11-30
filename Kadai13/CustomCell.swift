@@ -12,14 +12,9 @@ class CustomCell: UITableViewCell {
     @IBOutlet private weak var fruitsLabel: UILabel!
     @IBOutlet private weak var checkMarkImageView: UIImageView!
 
-    struct List {
-        let fruit: String
-        var isMarked: Bool
-    }
-
-    func configure(name: List, image: List) {
-        fruitsLabel.text = name.fruit
+    func configure(item: ListItem) {
+        fruitsLabel.text = item.name
         // 三項演算子で記述
-        checkMarkImageView.image = image.isMarked == true ? UIImage(named: "checkmark") : UIImage(named: "white")
+        checkMarkImageView.image = item.isMarked ? UIImage(named: "checkmark") : nil
     }
 }
