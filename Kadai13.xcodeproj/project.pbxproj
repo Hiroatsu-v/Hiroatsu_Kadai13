@@ -14,6 +14,7 @@
 		476A30A82754AA7C00D877C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476A30A72754AA7C00D877C0 /* Assets.xcassets */; };
 		476A30AB2754AA7C00D877C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476A30A92754AA7C00D877C0 /* LaunchScreen.storyboard */; };
 		476A30B32754AD2400D877C0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476A30B22754AD2400D877C0 /* CustomCell.swift */; };
+		477733D727573F76008F6613 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477733D627573F76008F6613 /* ListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		476A30AA2754AA7C00D877C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		476A30AC2754AA7C00D877C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		476A30B22754AD2400D877C0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		477733D627573F76008F6613 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				476A30A02754AA7800D877C0 /* SceneDelegate.swift */,
 				476A30A22754AA7800D877C0 /* ViewController.swift */,
 				476A30B22754AD2400D877C0 /* CustomCell.swift */,
+				477733D627573F76008F6613 /* ListItem.swift */,
 				476A30A42754AA7800D877C0 /* Main.storyboard */,
 				476A30A72754AA7C00D877C0 /* Assets.xcassets */,
 				476A30A92754AA7C00D877C0 /* LaunchScreen.storyboard */,
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				477733D727573F76008F6613 /* ListItem.swift in Sources */,
 				476A30A32754AA7800D877C0 /* ViewController.swift in Sources */,
 				476A309F2754AA7800D877C0 /* AppDelegate.swift in Sources */,
 				476A30B32754AD2400D877C0 /* CustomCell.swift in Sources */,
